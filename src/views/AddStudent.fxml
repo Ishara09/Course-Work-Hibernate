@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1071.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StudentControlle">
+   <children>
+      <TextField fx:id="txtID" layoutX="213.0" layoutY="98.0" prefHeight="38.0" prefWidth="154.0" promptText="Student ID">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNAME" layoutX="212.0" layoutY="161.0" prefHeight="38.0" prefWidth="603.0" promptText="Student Name">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtADDRESS" layoutX="212.0" layoutY="227.0" prefHeight="38.0" prefWidth="358.0" promptText="Student Address">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCONTACT" layoutX="212.0" layoutY="295.0" prefHeight="38.0" prefWidth="310.0" promptText="Student Contact No">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="51.0" layoutY="103.0" text="Student ID" />
+      <Label layoutX="51.0" layoutY="166.0" text="Student Name" />
+      <Label layoutX="50.0" layoutY="231.0" text="Student Address" />
+      <Label layoutX="52.0" layoutY="296.0" text="Student Contact no" />
+      <TableView fx:id="tblstudent" layoutX="14.0" layoutY="516.0" onMousePressed="#GetDataTable" prefHeight="210.0" prefWidth="1022.0">
+        <columns>
+          <TableColumn prefWidth="98.0" text="ID" />
+            <TableColumn prefWidth="288.0" text="Name" />
+            <TableColumn prefWidth="205.0" text="Address" />
+            <TableColumn prefWidth="208.0" text="DOB" />
+            <TableColumn prefWidth="222.0" text="Contact" />
+        </columns>
+      </TableView>
+      <Button layoutX="926.0" layoutY="744.0" mnemonicParsing="false" onAction="#clickDelete" prefHeight="38.0" prefWidth="109.0" style="-fx-background-color: #ef5350;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="631.0" layoutY="459.0" mnemonicParsing="false" onAction="#StudentSaveBtn" prefHeight="38.0" prefWidth="109.0" style="-fx-background-color: #8bc34a;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="754.0" layoutY="459.0" mnemonicParsing="false" onAction="#clickUpdate" prefHeight="38.0" prefWidth="109.0" style="-fx-background-color: #8bc34a;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="880.0" layoutY="459.0" mnemonicParsing="false" onAction="#clickClear" prefHeight="38.0" prefWidth="109.0" style="-fx-background-color: #8bc34a;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="txtBOD" layoutX="504.0" layoutY="98.0" promptText="Select Date" />
+      <Label layoutX="402.0" layoutY="103.0" text="DOB" />
+      <CheckBox fx:id="male" layoutX="688.0" layoutY="304.0" mnemonicParsing="false" onAction="#maleChecked" text="Male" />
+      <CheckBox fx:id="female" layoutX="790.0" layoutY="305.0" mnemonicParsing="false" onAction="#femaleChecked" text="Female" />
+      <Label layoutX="586.0" layoutY="304.0" text="Gender" />
+      <TextField fx:id="RegNo" layoutX="213.0" layoutY="34.0" prefHeight="38.0" prefWidth="154.0" promptText="Registration No">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="58.0" layoutY="41.0" text="Reg No" />
+      <TextField fx:id="Regfee" layoutX="504.0" layoutY="34.0" prefHeight="38.0" prefWidth="154.0" promptText="Registration Fee">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="401.0" layoutY="37.0" prefHeight="26.0" prefWidth="69.0" text="Reg Fee" />
+      <ComboBox fx:id="ComboCourseID" editable="true" layoutX="212.0" layoutY="369.0" onAction="#isselected" prefHeight="38.0" prefWidth="146.0" />
+      <TextField fx:id="txtCoursename" layoutX="381.0" layoutY="369.0" prefHeight="38.0" prefWidth="198.0" promptText="CourseName">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDuration" layoutX="605.0" layoutY="369.0" prefHeight="38.0" prefWidth="198.0" promptText="Duration">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="47.0" layoutY="370.0" prefHeight="26.0" prefWidth="109.0" text="Program Info" />
+   </children>
+</AnchorPane>

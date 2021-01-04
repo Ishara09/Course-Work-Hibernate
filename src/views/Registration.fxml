@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegistrationController">
+   <children>
+      <TableView fx:id="tblView" layoutX="38.0" layoutY="29.0" prefHeight="602.0" prefWidth="904.0">
+        <columns>
+          <TableColumn prefWidth="144.0" text="Registration No" />
+            <TableColumn prefWidth="203.0" text="Registration Fee" />
+            <TableColumn prefWidth="224.0" text="Student ID" />
+            <TableColumn prefWidth="202.0" text="Course ID" />
+            <TableColumn prefWidth="130.0" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
